@@ -14,13 +14,13 @@
         </classes>
     </test>
 
-    <test name="Negative">
-        <parameter name="browserName" value="firefox"/>
+    <test name="Search">
+        <parameter name="browserName" value="Chrome"/>
         <classes>
-            <class name="test.LoginTest">
+            <class name="test.SearchTest">
                 <methods>
-                    <include name="negativeLeadsToLoginSubmitPage" />
-                    <include name="negativeLoginTest" />
+                    <include name="basicSearchTest" />
+
                 </methods>
             </class>
         </classes>
