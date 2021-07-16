@@ -41,8 +41,8 @@ public class LoginTest extends BaseTest {
     @DataProvider
     public Object[][] negativeLeadsToLoginPage() {
         return new Object[][]{
-                {"ok.mailbox666@gmail.com", "wrong"},
-                {"ok.mailbox666@gmail.com", "12"}
+                {"mail@gmail.com", "wrong"},
+                {"mail@gmail.com", "12"}
         };
     }
 
