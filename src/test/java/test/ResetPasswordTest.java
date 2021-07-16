@@ -10,7 +10,7 @@ public class ResetPasswordTest extends BaseTest{
 
     @Test
     public void successfulResetPasswordTest() throws InterruptedException {
-        String newPassword = "Vlasenko1!";
+        String newPassword = "Passsword";
 
         Assert.assertTrue(loginPage.isLoaded(),
                 "LoginPage is not loaded.");
@@ -21,7 +21,7 @@ public class ResetPasswordTest extends BaseTest{
                 "RequestPasswordResetPage is not loaded.");
 
         PasswordResetSubmitPage passwordResetSubmitPage =
-                requestPasswordResetPage.findAccount("ok.mailbox666@gmail.com");
+                requestPasswordResetPage.findAccount("mail@gmail.com");
         sleep(180000);
         Assert.assertTrue(passwordResetSubmitPage.isLoaded(),
                 "PasswordResetSubmitPage is not loaded.");
