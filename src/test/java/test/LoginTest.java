@@ -22,9 +22,9 @@ public class LoginTest extends BaseTest {
     @DataProvider
     public Object[][] validDataProvider() {
         return new Object[][]{
-                { "ok.mailbox666@gmail.com", "Password" },
-                { "ok.mailbox666@GMAIL.COM", "Password" },
-                { " ok.mailbox666@gmail.com ", "Password" },
+                { "mail@gmail.com", "Password" },
+                { "mail@GMAIL.COM", "Password" },
+                { " mail@gmail.com ", "Password" },
         };
     }
 
