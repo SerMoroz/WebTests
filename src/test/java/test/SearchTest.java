@@ -33,7 +33,7 @@ public class SearchTest extends BaseTest {
      */
     @Test
     public void basicSearchTest(){
-        HomePage homePage = loginPage.login("ok.mailbox666@gmail.com", "Vlasenko13!");
+        HomePage homePage = loginPage.login("mail@gmail.com", "Password");
         String searchTerm= "HR";
 
         Assert.assertTrue(homePage.isLoaded(),
